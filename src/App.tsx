@@ -366,30 +366,48 @@ function App() {
                 <input
                   type="text"
                   placeholder="Your Name"
-                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent outline-none transition-all duration-200"
-                />
-                <input
-                  type="email"
-                  placeholder="Your Email"
-                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent outline-none transition-all duration-200"
-                />
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <div className="animate-fade-in-up text-center lg:text-left">
+              <h1 className="text-5xl md:text-7xl font-bold text-gray-900 mb-6">
+                Hi, I'm{' '}
+                <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-purple-600">
+                  Manish
+                </span>
+              </h1>
+              <p className="text-xl md:text-2xl text-gray-600 mb-8 leading-relaxed">
+                A passionate front-end developer crafting beautiful digital experiences 
+                with modern technologies and innovative solutions.
+              </p>
+              <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
+                <button 
+                  onClick={() => scrollTo('projects')}
+                  className="bg-blue-600 text-white px-8 py-4 rounded-lg font-semibold hover:bg-blue-700 transition-all duration-300 transform hover:scale-105 flex items-center justify-center gap-2"
+                >
+                  View My Work <ArrowRight size={20} />
+                </button>
+                <button 
+                  onClick={() => scrollTo('contact')}
+                  className="border-2 border-blue-600 text-blue-600 px-8 py-4 rounded-lg font-semibold hover:bg-blue-600 hover:text-white transition-all duration-300 transform hover:scale-105"
+                >
+                  Get In Touch
+                </button>
               </div>
-              <input
-                type="text"
-                placeholder="Subject"
-                className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent outline-none transition-all duration-200 mb-6"
-              />
-              <textarea
-                placeholder="Your Message"
-                rows={6}
-                className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent outline-none transition-all duration-200 mb-6 resize-none"
-              ></textarea>
-              <button
-                type="submit"
-                className="w-full bg-blue-600 text-white py-3 px-6 rounded-lg font-semibold hover:bg-blue-700 transition-colors duration-200"
-              >
-                Send Message
-              </button>
+            </div>
+            
+            {/* Profile Photo */}
+            <div className="flex justify-center lg:justify-end animate-fade-in-up">
+              <div className="relative">
+                <div className="w-80 h-80 rounded-full overflow-hidden border-8 border-white shadow-2xl">
+                  <img 
+                    src="https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?auto=compress&cs=tinysrgb&w=400" 
+                    alt="Manish - Front End Developer"
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+                {/* Decorative elements */}
+                <div className="absolute -top-4 -right-4 w-20 h-20 bg-gradient-to-r from-blue-600 to-purple-600 rounded-full opacity-20 animate-pulse"></div>
+                <div className="absolute -bottom-4 -left-4 w-16 h-16 bg-gradient-to-r from-purple-600 to-blue-600 rounded-full opacity-20 animate-pulse delay-1000"></div>
+              </div>
             </form>
           </div>
         </div>
