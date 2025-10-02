@@ -264,7 +264,7 @@ function App() {
           </div>
 
           <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-8">
-            {['React', 'TypeScript', 'Node.js', 'Python', 'MongoDB',   'Git', 'Figma'].map((tech, index) => (
+            {['React', 'TypeScript', 'Node.js', 'Python', 'MongoDB','Github','Git', 'Figma'].map((tech, index) => (
               <div key={index} className="bg-white p-4 rounded-lg shadow-sm hover:shadow-md transition-all duration-300 transform hover:scale-105 text-center">
                 <span className="font-medium text-gray-700">{tech}</span>
               </div>
