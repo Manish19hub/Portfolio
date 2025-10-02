@@ -164,7 +164,7 @@ function App() {
               <div className="relative">
                 <div className="w-80 h-80 rounded-full overflow-hidden border-8 border-white shadow-2xl">
                   <img 
-                    src="https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?auto=compress&cs=tinysrgb&w=400" 
+                    src="pp.jpg" 
                     alt="Manish - Front End Developer"
                     className="w-full h-full object-cover"
                   />
