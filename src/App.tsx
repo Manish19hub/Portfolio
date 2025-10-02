@@ -68,7 +68,8 @@ function App() {
     { name: "Frontend Development", icon: Code, level: 80 },
     { name: "UI/UX Design", icon: Palette, level: 60 },
     { name: "Database Management", icon: Database, level: 85 },
-    { name: "Backend Development", icon: Code, level: 50 }
+    { name: "Backend Development", icon: Code, level: 50 },
+     { name: "Machine Learning ", icon: Code, level: 40 }
    
   ];
 
