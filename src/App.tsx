@@ -48,7 +48,7 @@ function App() {
   const projects = [
     {
       title: "Calorie-tracker Platform",
-      description: "A full-stack calorie-tracker platform built with React, Node.js, and API. Features include Sign-up/login-page, food processing through images or photos through cameras, and admin dashboard.",
+      description: "A full-stack calorie-tracker platform built with React, Node.js, and external APIs. Features include sign-up/login, food recognition via image upload or camera, nutrition calculation, and an admin dashboard for managing users and food data.",
       tech: ["Html","Css","React", "Node.js","Google API"],
       image: "https://images.pexels.com/photos/230544/pexels-photo-230544.jpeg?auto=compress&cs=tinysrgb&w=500",
       github: "https://github.com/yashp1395/nutrition-harmony",
@@ -64,13 +64,12 @@ function App() {
     }
   ];
 
-  const skills = [
+  const skills: { name: string; icon: any; level: number }[] = [
     { name: "Frontend Development", icon: Code, level: 80 },
     { name: "UI/UX Design", icon: Palette, level: 60 },
     { name: "Database Management", icon: Database, level: 85 },
     { name: "Backend Development", icon: Code, level: 60 },
-     { name: "Machine Learning ", icon: Code, level: 50 }
-   
+    { name: "Machine Learning", icon: Code, level: 50 }
   ];
 
   return (
@@ -246,21 +245,24 @@ function App() {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
-            {skills.map((skill, index) => (
-              <div key={index} className="bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition-shadow duration-300">
-                <div className="flex items-center mb-4">
-                  <skill.icon className="w-8 h-8 text-blue-600 mr-3" />
-                  <h3 className="font-semibold text-gray-900">{skill.name}</h3>
+            {skills.map((skill, index) => {
+              const Icon = skill.icon;
+              return (
+                <div key={index} className="bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition-shadow duration-300">
+                  <div className="flex items-center mb-4">
+                    <Icon className="w-8 h-8 text-blue-600 mr-3" />
+                    <h3 className="font-semibold text-gray-900">{skill.name}</h3>
+                  </div>
+                  <div className="w-full bg-gray-200 rounded-full h-2 mb-2">
+                    <div 
+                      className="bg-gradient-to-r from-blue-600 to-purple-600 h-2 rounded-full"
+                      style={{ width: `${skill.level}%` }}
+                    ></div>
+                  </div>
+                  <span className="text-sm text-gray-600">{skill.level}%</span>
                 </div>
-                <div className="w-full bg-gray-200 rounded-full h-2 mb-2">
-                  <div 
-                    className="bg-gradient-to-r from-blue-600 to-purple-600 h-2 rounded-full"
-                    style={{ width: `${skill.level}%` }}
-                  ></div>
-                </div>
-                <span className="text-sm text-gray-600">{skill.level}%</span>
-              </div>
-            ))}
+              );
+            })}
           </div>
 
           <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-8">
