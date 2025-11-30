@@ -68,8 +68,8 @@ function App() {
     { name: "Frontend Development", icon: Code, level: 80 },
     { name: "UI/UX Design", icon: Palette, level: 60 },
     { name: "Database Management", icon: Database, level: 85 },
-    { name: "Backend Development", icon: Code, level: 50 },
-     { name: "Machine Learning ", icon: Code, level: 40 }
+    { name: "Backend Development", icon: Code, level: 60 },
+     { name: "Machine Learning ", icon: Code, level: 50 }
    
   ];
 
@@ -400,7 +400,7 @@ function App() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
             <p className="text-gray-400">
-              © 2025 Manish. All rights reserved. Built with React and Tailwind CSS.
+              © 2025 Manish. All rights reserved.
             </p>
           </div>
         </div>
