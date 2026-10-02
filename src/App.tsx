@@ -46,22 +46,22 @@ function App() {
   };
 
   const projects = [
-    {
-      title: "Calorie-tracker Platform",
-      description: "A full-stack calorie-tracker platform built with React, Node.js, and external APIs. Features include sign-up/login, food recognition via image upload or camera, nutrition calculation, and an admin dashboard for managing users and food data.",
-      tech: ["Html","Css","React", "Node.js","Google API"],
-      image: "https://images.pexels.com/photos/230544/pexels-photo-230544.jpeg?auto=compress&cs=tinysrgb&w=500",
-      github: "https://github.com/yashp1395/nutrition-harmony",
-      live: "https://nutrition-harmony-personal.vercel.app/"
-    },
-    {
-      title: "Sikkim Monastery Website",
-      description: "A collaborative task management application with real-time updates, drag-and-drop functionality, and team collaboration features.",
-      tech: ["React", "TypeScript", "Firebase", "Tailwind"],
-      image: "https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg?auto=compress&cs=tinysrgb&w=500",
-      github: "https://github.com/Manish19hub/Monastery360",
-      live: "https://monastery360-chi.vercel.app/"
-    }
+   {
+  title: "CODEFLOW - Coding Platform",
+  description: "A full-stack online coding platform designed for solving programming problems, participating in coding contests, and improving problem-solving skills. The platform includes user authentication with Google OAuth, a Monaco-based code editor, coding problems, contests, user profiles, and a leaderboard.",
+  tech: ["HTML", "CSS", "React", "Node.js", "Express.js", "MongoDB", "Google OAuth"],
+  image: "https://images.pexels.com/photos/270348/pexels-photo-270348.jpeg?auto=compress&cs=tinysrgb&w=500",
+  github: "https://github.com/samarth0721/Coding_Platform",
+  live: "https://coding-platform-pi.vercel.app/"
+},
+   {
+  title: "Automated Meeting Outcome Tracker",
+  description: "An AI-powered meeting analysis platform that automatically processes meeting recordings, converts speech into text, and extracts important action items and outcomes. The system uses AWS services for transcription and NLP-based analysis, with FastAPI and PostgreSQL for backend processing and data storage.",
+  tech: ["Python", "FastAPI", "PostgreSQL", "SQLAlchemy", "AWS Transcribe", "AWS Comprehend", "AWS SNS", "DynamoDB"],
+  image: "https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg?auto=compress&cs=tinysrgb&w=500",
+  github: "https://github.com/Manish19hub/Automated-Meeting-Outcome-Tracker.git",
+  live: "https://automated-meeting-outcome-tracker.onrender.com"
+}
   ];
 
   const skills: { name: string; icon: any; level: number }[] = [
